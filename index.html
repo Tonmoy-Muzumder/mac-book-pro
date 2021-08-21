@@ -30,21 +30,21 @@
 <!-- memory -->
                     <div>
                         <h3 class="mt-5 mb-3">Memory</h3>
-                        <button class="button">8GB unified memory</button>
-                        <button class="button">16GB unified memory</button>
+                        <button id="first-memory" class="button">8GB unified memory</button>
+                        <button id="second-memory" class="button">16GB unified memory</button>
                     </div>
 <!-- storage-->
                     <div>
                         <h3 class="mt-5 mb-3">Storage</h3>
-                        <button class="button">256GB SSD Storage</button>
-                        <button class="button">512GB SSD Storage</button>
-                        <button class="button">1TB SSD Storage</button>
+                        <button id="first-storage" class="button">256GB SSD Storage</button>
+                        <button id="second-storage" class="button">512GB SSD Storage</button>
+                        <button id="third-storage" class="button">1TB SSD Storage</button>
                     </div>
 <!-- delivery option -->
                     <div>
                         <h3 class="mt-5 mb-3">Choose your delivery option</h2>
-                        <button class="button">Friday, Aug 25 FREE Prime Delivery</button>
-                        <button class="button mb-5">Friday, Aug 21 FREE Prime Delivery</button>
+                        <button id="first-delivery" class="button">Friday, Aug 25 FREE Prime Delivery</button>
+                        <button id="second-delivery" class="button mb-5">Friday, Aug 21 FREE Prime Delivery</button>
                     </div>
 <!-- total price calculation code -->
 
@@ -70,7 +70,7 @@
                             <h3>Extra Memory Cost</h3>
                         </div>
                         <div>
-                            <h3>$<span>0</span> </h3>
+                            <h3>$<span id="memory-cost">0</span> </h3>
                         </div>
                         
                     </div>
@@ -82,7 +82,7 @@
                             <h3>Extra Storage Cost</h3>
                         </div>
                         <div>
-                            <h3>$<span>0</span> </h3>
+                            <h3>$<span id="storage-cost">0</span> </h3>
                         </div>
                         
                     </div>
@@ -94,7 +94,7 @@
                             <h3>delivery Charge</h3>
                         </div>
                         <div>
-                            <h3>$<span>0</span> </h3>
+                            <h3>$<span id="delivery-cost">0</span> </h3>
                         </div>
                         
                     </div>
@@ -106,7 +106,7 @@
                             <h3>Total Price</h3>
                         </div>
                         <div>
-                            <h3>$<span>1299</span> </h3>
+                            <h3>$<span id="total-cost">1299</span> </h3>
                         </div>
                         
                     </div>
@@ -117,19 +117,19 @@
                  <div class="my-5">
                     <h3 class="fw-normal">add Promo Code</h3>
                     <input type="text">
-                    <button class="bg-danger text-white">Apply</button>
+                    <button id="promo-code-btn" class="bg-danger text-white">Apply</button>
                 </div>
             </div>
         </div>
 
 <!-- total price last section -->
       </section>
-                <hr class="opacity-50">
+                <hr>
 
 <!-- total price last section -->
       <section>
         <div class="my-4">
-            <h1 class="fw-bold text-center mb-5">Total : $<span>1299</span> </h1>
+            <h1 class="fw-bold text-center mb-5">Total : $<span id="total-price">1299</span> </h1>
         </div>
       </section>
     </main>
